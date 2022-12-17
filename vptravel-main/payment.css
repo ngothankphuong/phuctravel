@@ -1,0 +1,214 @@
+@import "home.css";
+@import "color.css";
+
+html, body {
+    margin: 0; 
+    height: 100%; 
+    overflow-y: hidden;
+}
+
+button{
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 17px;
+}
+
+h2{
+    font-size: 27px;
+}
+
+.hl{
+    width: 300px !important; 
+    margin-top: -15px;
+}
+
+.pm_bg{
+    filter: brightness(20%) !important;
+}
+
+.home_pm{
+    background-color: white;
+    border-radius: 15px;
+    position: absolute;
+    height: 80%;
+    width: 70%;
+}
+
+.pm{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.payment_content{
+    right: 8% !important;
+    width: 70% !important;
+    height: 65% !important;
+    padding: 70px !important;
+
+}
+
+.pm_title{
+    margin-top: -50px;
+    margin-bottom: 50px;
+}
+
+.pm_content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.pm_tour{
+    /* background-color: red; */
+    height: 100%;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.pmt_img{
+    border-radius: 15px;
+    image-rendering: pixelated;
+    overflow: hidden;
+    width: 100%;
+}
+
+.pm_info{
+    /* background-color: blue; */
+    height: 100%;
+    width: 55%;
+}
+
+
+.pmt_place_name{
+    font-size: 35px;
+    color: var(--main);
+}
+
+.fa-star{
+    margin-left: 15px;
+}
+
+.dura_text, .fa-clock{
+    color: rgb(179, 0, 0) !important;
+    font-weight: 400 !important;
+}
+
+.rate_text, .fa-star{
+    color: rgb(255, 208, 0) !important;
+    font-weight: 400 !important;
+}
+
+.pmt_place_sub{
+    margin-top: 15px;
+}
+
+.pmt_price{
+    font-size: 25px;
+    color: white;
+    padding: 5px 15px;
+    background-color: var(--main);
+    border-radius: 25px;
+    margin-top: 20px;
+}
+
+.mt{
+    margin-top: 15px;
+}
+
+.mt_tt{
+    margin-top: 20px;
+}
+
+.pm_method{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+.pm_method input{
+    margin-left: 40px;
+}
+
+.pm_method img{
+    height: 25px;
+    width: auto;
+}
+
+.pm_user{
+    display: flex;
+    flex-direction: column;
+}
+
+.each_if{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    align-content: center;
+    margin-left: 105px;
+    margin-top: 10px;
+}
+
+.pm_user input, .select_am input{
+    width: 400px;
+    height: 25px;
+}
+
+.two_if input{
+    width: 150px;
+    /* margin-left: 40px; */
+}
+
+.ift_tt{
+    margin-left: 50px;
+}
+
+.ttt{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ttt span{
+    font-size: 28px;
+    color: var(--main);
+}
+
+.am_btn{
+    width: 160px !important;
+    height: 15px !important;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    margin-left: 55%;
+}
+
+.more_tt{
+    margin-left: 20%;
+    align-self: center;
+    font-size: 16px;
+    color: rgb(110, 110, 110);
+    font-weight: 200;
+    font-style: italic;
+}
+
+.p_btn{
+    width: 100px !important;
+    height: 20px !important;  
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 40px 60px;
+}

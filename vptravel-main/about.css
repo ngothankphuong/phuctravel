@@ -1,0 +1,101 @@
+@import "color.css";
+@import "below_content.css";
+
+/*  */
+.about_content{
+    width: 70vw;
+    display: grid;
+    grid-template-areas:
+    "img  content";
+    
+}
+.about_content img{
+    grid-area: img;
+    border-radius: 25px;
+    margin-left: 110px;
+    margin-bottom: 10%;
+    height: 73%;
+}
+.content{
+    grid-area: content;
+    font-weight: lighter;
+    font-size: 22px;
+    margin-left: 30px;
+}
+.contact_us{
+    text-decoration:underline blue;
+}
+.about_icon{
+    font-size: 45px;
+    color: black;
+    margin-top: -40px;
+
+} 
+.about_icon i:hover{
+    color: rgba(56, 56, 56, 1);
+}
+
+.about_input input{
+  width: 60%;  
+  padding: 14px 20px; 
+  margin: 8px 0;  
+  box-sizing: border-box;
+  border-color: rgba(56, 56, 56, 1)k;
+  margin-bottom: 10px;
+  border: 2px solid rgba(56, 56, 56, 1);  
+
+}
+.about_input button{
+    background-color: rgba(56, 56, 56, 1); 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-left: -130px;
+}
+.about_input placeholder{
+    font-size: 100px;
+}
+.we_img{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+}
+.card{
+    height: 100%;
+    width: 40%;
+    border-radius: 25px;
+    background-color: white;
+    box-shadow: 5px 5px grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 60px;
+    border: 1px solid grey;
+}
+.card_img img{
+    height: 200px;
+    width: 200px;
+    overflow: hidden;
+    image-rendering: pixelated;
+    border-radius: 100%;
+    margin-left: 1px;
+}
+.card_content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px ;
+    margin-top: 15px;
+}
+
+.mssv{
+    font-size: 24px;
+}

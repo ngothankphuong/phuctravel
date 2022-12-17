@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+    <title>VP Travel</title>
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="gotop">
+        <a href="#">
+            <i class="fa-solid fa-circle-up"></i>
+        </a>
+    </div>
+    <div class="nav_bar">
+        <div class="logo">
+            <a href="#">
+                <img class="logo_img" src="img/logo_hor_white.png" alt="">
+            </a>
+        </div>
+        <div class="nav">
+            <a href="#">Trang chủ</a>
+            <a href="#destination">Địa điểm</a>
+            <a href="#contact">Liên hệ</a>
+            <a href="#about">Về chúng tôi</a>
+        </div>
+    </div>
+    <div class="home_content">
+        <div>
+            <img class="home_bg" src="img/main_bgrd.jpg" alt="">
+            <div id="home" class="home">
+                <div class="content">
+                    <div class="main_title">
+                        <img src="img/logo_hor_white.png" alt="">
+                    </div>
+                    <div class="sub_title">
+                        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Repudiandae quae id, doloremque alias sed accusamus est 
+                            perferendis facilis architecto sit ipsum perspiciatis 
+                            tenetur natus dicta! Obcaecati ea impedit ex doloremque alias sed accusamus est 
+                            perferendis facilis architecto nemo.</h3>
+                    </div>
+                    <button class="explore">
+                        <a href="#below" >
+                            Khám phá thêm
+                            <i class="fa-solid fa-circle-arrow-right"></i>
+                        </a>
+                    </button>
+                </div>
+            </div>
+            <div class="form_box">
+                <h1>ĐẶT TOUR NGAY BÂY GIỜ</h1>
+                <div class="hor_line"></div>
+                <form action="POST">
+                    <div class="each_form">
+                        <i class="fa-solid fa-signature"></i>
+                        <input placeholder="Nhập họ và tên của bạn" type="text" name="email" id="email_box">
+                    </div>
+                    <div class="each_form">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input placeholder="Nhập Email của bạn" type="text" name="email" id="email_box">
+                    </div>
+                    <div class="each_form">
+                        <i class="fa-solid fa-phone"></i>
+                        <input placeholder="Nhập số điện thoại của bạn" type="text" name="email" id="email_box">
+                    </div>
+                    <div class="each_form">
+                        <i class="fa-solid fa-map-location-dot"></i>
+                        <input placeholder="Bạn muốn đi đâu?" type="text" name="email" id="email_box">
+                    </div>
+                    <div class="twocol_form">
+                        <div class="twocol tc1">
+                            <i class="fa-solid fa-calendar-days"></i>
+                            <input type="text" placeholder="Chọn ngày đi" onfocus="(this.type='date')" onblur="(this.type='text')">
+                        </div>
+                        <div class="twocol tc2">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <input list="browsers" placeholder="Xuất phát từ?" >
+                            <datalist id="browsers">
+                                <option value="An Giang">An Giang
+                                    <option value="Bà Rịa - Vũng Tàu">Bà Rịa - Vũng Tàu
+                                    <option value="Bắc Giang">Bắc Giang
+                                    <option value="Bắc Kạn">Bắc Kạn
+                                    <option value="Bạc Liêu">Bạc Liêu
+                                    <option value="Bắc Ninh">Bắc Ninh
+                                    <option value="Bến Tre">Bến Tre
+                                    <option value="Bình Định">Bình Định
+                                    <option value="Bình Dương">Bình Dương
+                                    <option value="Bình Phước">Bình Phước
+                                    <option value="Bình Thuận">Bình Thuận
+                                    <option value="Bình Thuận">Bình Thuận
+                                    <option value="Cà Mau">Cà Mau
+                                    <option value="Cao Bằng">Cao Bằng
+                                    <option value="Đắk Lắk">Đắk Lắk
+                                    <option value="Đắk Nông">Đắk Nông
+                                    <option value="Điện Biên">Điện Biên
+                                    <option value="Đồng Nai">Đồng Nai
+                                    <option value="Đồng Tháp">Đồng Tháp
+                                    <option value="Đồng Tháp">Đồng Tháp
+                                    <option value="Gia Lai">Gia Lai
+                                    <option value="Hà Giang">Hà Giang
+                                    <option value="Hà Nam">Hà Nam
+                                    <option value="Hà Tĩnh">Hà Tĩnh
+                                    <option value="Hải Dương">Hải Dương
+                                    <option value="Hậu Giang">Hậu Giang
+                                    <option value="Hòa Bình">Hòa Bình
+                                    <option value="Hưng Yên">Hưng Yên
+                                    <option value="Khánh Hòa">Khánh Hòa
+                                    <option value="Kiên Giang">Kiên Giang
+                                    <option value="Kon Tum">Kon Tum
+                                    <option value="Lai Châu">Lai Châu
+                                    <option value="Lâm Đồng">Lâm Đồng
+                                    <option value="Lạng Sơn">Lạng Sơn
+                                    <option value="Lào Cai">Lào Cai
+                                    <option value="Long An">Long An
+                                    <option value="Nam Định">Nam Định
+                                    <option value="Nghệ An">Nghệ An
+                                    <option value="Ninh Bình">Ninh Bình
+                                    <option value="Ninh Thuận">Ninh Thuận
+                                    <option value="Phú Thọ">Phú Thọ
+                                    <option value="Quảng Bình">Quảng Bình
+                                    <option value="Quảng Bình">Quảng Bình
+                                    <option value="Quảng Ngãi">Quảng Ngãi
+                                    <option value="Quảng Ninh">Quảng Ninh
+                                    <option value="Quảng Trị">Quảng Trị
+                                    <option value="Sóc Trăng">Sóc Trăng
+                                    <option value="Sơn La">Sơn La
+                                    <option value="Tây Ninh">Tây Ninh
+                                    <option value="Thái Bình">Thái Bình
+                                    <option value="Thái Nguyên">Thái Nguyên
+                                    <option value="Thanh Hóa">Thanh Hóa
+                                    <option value="Thừa Thiên Huế">Thừa Thiên Huế
+                                    <option value="Tiền Giang">Tiền Giang
+                                    <option value="Trà Vinh">Trà Vinh
+                                    <option value="Tuyên Quang">Tuyên Quang
+                                    <option value="Vĩnh Long">Vĩnh Long
+                                    <option value="Vĩnh Phúc">Vĩnh Phúc
+                                    <option value="Yên Bái">Yên Bái
+                                    <option value="Phú Yên">Phú Yên
+                                    <option value="Tp.Cần Thơ">Tp.Cần Thơ
+                                    <option value="Tp.Đà Nẵng">Tp.Đà Nẵng
+                                    <option value="Tp.Hải Phòng">Tp.Hải Phòng
+                                    <option value="Tp.Hà Nội">Tp.Hà Nội
+                                    <option value="Tp.HCM">TP HCM
+                            </datalist>
+                        </div>
+                    </div>
+                    <div class="each_form commit_btn">
+                        <a href="">Gửi thông tin tư vấn ngay!</a>
+                    </div>
+                    <div class="sub_script">
+                        <p>Nhân viên tư vấn sẽ gọi điện cho bạn ngay sau khi gửi thông tin tư vấn
+                            <br>Hotline 1: 0987654321 / Hotline 2: 0123456789 
+                            <br>Email: vptravel@gmail.com
+                        </p>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="below">
+            <div class="below_content" id="below">
+                <div class="services">
+                    <div class="title">
+                        <h1>MỘT SỐ DỊCH VỤ CỦA VP TRAVEL</h1>
+                        <div class="hor_line below_line"></div>
+                    </div>
+                    <div class="all_services">
+                        <a onclick="window.location.href='#'" class="advise services_box">
+                            <i class="fa-solid fa-comment-medical"></i>
+                            <span>Tư vấn du lịch</span>
+                        </a>
+                        <a onclick="window.location.href='#destination'" class="booktour services_box">
+                            <i class="fa-solid fa-map-location-dot"></i>
+                            <span>Đặt tour du lịch</span>
+                        </a>
+                        <a href="https://www.traveloka.com/vi-vn/hotel" target="_blank" class="hotel services_box">
+                            <i class="fa-solid fa-hotel"></i>
+                            <span>Đặt phòng khách sạn</span>
+                        </a>
+                        <a href="https://www.traveloka.com/vi-vn/flight" target="_blank" class="plane services_box">
+                            <i class="fa-solid fa-plane-departure"></i>
+                            <span>Đặt vé máy bay</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="destination" id="destination">
+                    <!-- DIA DIEM CHO NAY NE -->
+                    <div class="title">
+                        <h1>ĐỊA ĐIỂM DU LỊCH</h1>
+                        <div class="hor_line below_line"></div>
+                    </div>
+
+
+
+                
+                    <!-- Hu tu doan nay ne -->
+                    <div class="all_places">
+                        <div class="places-row ">  
+                            <div onclick="localStorage.clear(), window.localStorage.setItem('code','pl1'), window.location.href='payment.html'" class="place img1" id="pl1">
+                                <img src="img/phuquoc.jpg" alt=""> 
+                                <div class="place_text">
+                                    <h2>Phú Quốc</h2>
+                                    <div class="duration">
+                                        <i class="fa-regular fa-clock"></i>
+                                        <span>3 ngày 2 đêm</span>
+                                    </div>
+                                </div>  
+                                <div class="detail">
+                                    <div class="price">
+                                        4.899.000 VND
+                                    </div>
+                                    <div class="detail_text">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit consectetur amet adipisicing adipisicing elit.
+                                    </div>
+                                </div>
+                                <div class="booknow">
+                                    Đặt tour ngay >
+                                </div>
+                            </div>
+        
+                            <div onclick="localStorage.clear(), window.localStorage.setItem('code','pl2'), window.location.href='payment.html'" class="place img2" id="pl2">
+                                <img src="img/danang.jpg" alt="">
+                                <div class="place_text">
+                                    <h2>Đà Nẵng</h2>
+                                    <div class="duration">
+                                        <i class="fa-regular fa-clock"></i>
+                                        <span>5 ngày 4 đêm</span>
+                                    </div>
+                                </div>
+                                <div class="detail">
+                                    <div class="price">
+                                        6.499.000 VND
+                                    </div>
+                                    <div class="detail_text">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit consectetur amet adipisicing adipisicing elit.
+                                    </div>
+                                </div>
+                                <div class="booknow">
+                                    Đặt tour ngay >
+                                </div>
+                            </div>
+                            <div onclick="localStorage.clear(), window.localStorage.setItem('code','pl3'), window.location.href='payment.html'" class="place img3" id="pl3">
+                                <img src="img/halong.jpg" alt="">
+                                <div class="place_text">
+                                    <h2>Hạ Long</h2>
+                                    <div class="duration">
+                                        <i class="fa-regular fa-clock"></i>
+                                        <span>3 ngày 2 đêm</span>
+                                    </div>
+                                </div>
+                                <div class="detail">
+                                    <div class="price">
+                                        3.990.000 VND
+                                    </div>
+                                    <div class="detail_text">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit consectetur amet adipisicing adipisicing elit.
+                                    </div>
+                                </div>
+                                <div class="booknow">
+                                    Đặt tour ngay >
+                                </div>
+                            </div>
+                            <div onclick="localStorage.clear(), window.localStorage.setItem('code','pl4'), window.location.href='payment.html'" class="place img4" id="pl4">
+                                <img src="img/hoian.jpg" alt="">
+                                <div class="place_text">
+                                    <h2>Hội An</h2>
+                                    <div class="duration">
+                                        <i class="fa-regular fa-clock"></i>
+                                        <span>4 ngày 3 đêm</span>
+                                    </div>
+                                </div>
+                                <div class="detail">
+                                    <div class="price">
+                                        5.899.000 VND
+                                    </div>
+                                    <div class="detail_text">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit consectetur amet adipisicing adipisicing elit.
+                                    </div>
+                                </div>
+                                <div class="booknow">
+                                    Đặt tour ngay >
+                                </div>
+                            </div>
+                            <div onclick="localStorage.clear(), window.localStorage.setItem('code','pl5'), window.location.href='payment.html'" class="place img1" id="pl5">
+                                <img src="img/nhatrang.jpg" alt="">
+                                <div class="place_text">
+                                    <h2>Nha Trang</h2>
+                                    <div class="duration">
+                                        <i class="fa-regular fa-clock"></i>
+                                        <span>2 ngày 1 đêm</span>
+                                    </div>
+                                </div>
+                                <div class="detail">
+                                    <div class="price">
+                                        2.499.000 VND
+                                    </div>
+                                    <div class="detail_text">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit consectetur amet adipisicing adipisicing elit.
+                                    </div>
+                                </div>
+                                <div class="booknow">
+                                    Đặt tour ngay >
+                                </div>
+                            </div>
+                            <div onclick="localStorage.clear(), window.localStorage.setItem('code','pl6'), window.location.href='payment.html'" class="place img2" id="pl6">
+                                <img src="img/dalat.jpg" alt="">
+                                <div class="place_text">
+                                    <h2>Đà Lạt</h2>
+                                    <div class="duration">
+                                        <i class="fa-regular fa-clock"></i>
+                                        <span>4 ngày 3 đêm</span>
+                                    </div>
+                                </div>
+                                <div class="detail">
+                                    <div class="price">
+                                        4.499.000 VND
+                                    </div>
+                                    <div class="detail_text">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit consectetur amet adipisicing adipisicing elit.
+                                    </div>
+                                </div>
+                                <div class="booknow">
+                                    Đặt tour ngay >
+                                </div>
+                            </div>
+                            <div onclick="localStorage.clear(), window.localStorage.setItem('code','pl7'), window.location.href='payment.html'" class="place img1" id="pl7">
+                                <img src="img/ninhbinh.jpg" alt="">
+                                <div class="place_text">
+                                    <h2>Ninh Bình</h2>
+                                    <div class="duration">
+                                        <i class="fa-regular fa-clock"></i>
+                                        <span>3 ngày 2 đêm</span>
+                                    </div>
+                                </div>
+                                <div class="detail">
+                                    <div class="price">
+                                        5.499.000 VND
+                                    </div>
+                                    <div class="detail_text">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit consectetur amet adipisicing adipisicing elit.
+                                    </div>
+                                </div>
+                                <div class="booknow">
+                                    Đặt tour ngay >
+                                </div>
+                             </div>
+                             <div onclick="localStorage.clear(), window.localStorage.setItem('code','pl8'), window.location.href='payment.html'" class="place img1" id="pl8">
+                                <img src="img/sapa.jpg" alt="">
+                                <div class="place_text">
+                                    <h2>Sapa</h2>
+                                    <div class="duration">
+                                        <i class="fa-regular fa-clock"></i>
+                                        <span>3 ngày 2 đêm</span>
+                                    </div>
+                                </div>
+                                <div class="detail">
+                                    <div class="price">
+                                        3.499.000 VND
+                                    </div>
+                                    <div class="detail_text">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit consectetur amet adipisicing adipisicing elit.
+                                    </div>
+                                </div>
+                                <div class="booknow">
+                                    Đặt tour ngay >
+                                </div>
+                             </div>
+                             <div onclick="localStorage.clear(), window.localStorage.setItem('code','pl9'), window.location.href='payment.html'" class="place img1" id="pl9">
+                                <img src="img/cantho.jpg" alt="">
+                                <div class="place_text">
+                                    <h2>Cần Thơ</h2>
+                                    <div class="duration">
+                                        <i class="fa-regular fa-clock"></i>
+                                        <span>3 ngày 2 đêm</span>
+                                    </div>
+                                </div>
+                                <div class="detail">
+                                    <div class="price">
+                                        2.899.000 VND
+                                    </div>
+                                    <div class="detail_text">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit consectetur amet adipisicing adipisicing elit.
+                                    </div>
+                                </div>
+                                <div class="booknow">
+                                    Đặt tour ngay >
+                                </div>
+                             </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="contact" id="contact">
+                    <div class="title">
+                        <h1>LIÊN HỆ CHÚNG TÔI</h1>
+                        <div class="hor_line below_line"></div>
+                    </div>
+                    <div class="info_contact">
+                        <div class="info g1">
+                            <i class="fa-solid fa-square-phone-flip"></i>
+                            <span>0123456789</span>
+                        </div>
+                        <div class="info g2">
+                            <i class="fa-solid fa-square-phone-flip"></i>
+                            <span>0987654321</span>
+                        </div>
+                        <div class="info g3">
+                            <i class="fa-solid fa-envelope"></i>
+                            <span>vptravel@gmail.com</span>
+                        </div>
+                        <div class="info g4">
+                            <i class="fa-solid fa-building"></i>
+                            <span>Phường ABC, quận XYZ, Tp.Cần Thơ</span>
+                        </div>
+                    </div>
+                    <div class="contact_content">
+                        <div class="contact_image">
+                            <div class="slide_container">
+                                <div class="mySlides fade">
+                                    <img src="img/home_dalat.jpeg" style="width:100%">
+                                </div>
+                                <div class="mySlides fade">
+                                    <img src="img/home_phuquoc.jpg" style="width:100%">
+                                </div>
+                                <div class="mySlides fade">
+                                    <img src="img/home_nhatrang.jpg" style="width:100%">
+                                </div>
+                                <div class="mySlides fade">
+                                    <img src="img/home_hoian.jpg" style="width:100%">
+                                </div>
+                                <div class="mySlides fade">
+                                    <img src="img/home_phongnha.jpg" style="width:100%">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contact_form">
+                            <div class="form_box form_contact">
+                                <div class="each_form ef1">
+                                    <i class="fa-solid fa-signature"></i>
+                                    <input placeholder="Nhập họ và tên của bạn" type="text" name="email" id="email_box">
+                                </div>
+                                <div class="each_form ef1">
+                                    <i class="fa-solid fa-envelope"></i>
+                                    <input placeholder="Nhập Email của bạn" type="text" name="email" id="email_box">
+                                </div>
+                                <div class="each_form ef1">
+                                    <i class="fa-solid fa-phone"></i>
+                                    <input placeholder="Nhập số điện thoại của bạn" type="text" name="email" id="email_box">
+                                </div>
+                                <div class="each_form ef1 ef2">
+                                    <i class="fa-solid fa-comment"></i>
+                                    <textarea placeholder="Nhập ý kiến đóng góp của bạn" name="comment" id="" cols="70" rows="8"></textarea>
+                                </div>
+                                <div class="each_form ef1 commit_btn cmtbtn">
+                                    <a href="">Gửi ý kiến của bạn</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="about" id="about">
+                    <div class="title">
+                        <h1>VỀ CHÚNG TÔI</h1>
+                        <div class="hor_line below_line"></div>
+                    </div>
+                    <div class="about_content">
+                        <div class="about_img">
+                            <img src="img/about.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <p>
+                                Chúng tôi muốn giới thiệu cho bạn một chút về chúng tôi. Chúng tôi là ai, 
+                                chúng tôi làm gì và những gì là quan trọng đối với chúng tôi.
+                                Có thể, bạn biết đến chúng tôi như hãng dịch vụ nổi tiếng về du lịch.
+                                Nhưng bạn có biết rằng mỗi tuần chúng tôi thực hiện rất nhiều đơn hàng Và thậm chí còn có nhiều thông tin hơn nữa về chúng tôi!
+                                Bạn có thể theo các liên kết tại đây để tìm hiểu triết lý kinh doanh của chúng tôi.
+                            </p>
+                            
+                            <div class="we_img">
+                                <div class="card ">
+                                    <div class="card_img">
+                                        <img src="img/zink.jpg" alt="">
+                                    </div>
+                                    <!-- <div class="hor_line "></div> -->
+                                    <!-- <hr size="3px" width="100%"> -->
+                                    <div class="card_content">
+                                        <span>Phúc Vinh</span>
+                                        <span class="mssv">B2003768</span>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card_img">
+                                        <img src="img/phuc.jpg" alt="">
+                                    </div>
+                                    <!-- <div class="hor_line"></div> -->
+                                    <!-- <hr size="3px" width="100%"> -->
+                                    <div class="card_content">
+                                        <span>Hoàng Phúc</span>
+                                        <span class="mssv">B2004802</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+
+
+
+            <div class="footer">
+                <div class="ft_content">
+                    <div class="top_ft_ct">
+                        <div class="top_ct">
+                            <h3>VỀ CHÚNG TÔI</h3>
+                            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Ex ipsam fugit, voluptate dignissimos aliquid 
+                                Lorem ipsum dolor sit amet consectetur adipisicing
+                                Lorem ipsum dolor sit amet consectetur adipisi cingLorem ipsum dolor sit amet consectetur adipisicing repudiandae fugiat tempora impedit velit cumque praesentium modi 
+                                nostrum ad quibusdam accusamus, ea ratione? Ipsa, doloribus.</span>
+                        </div>
+                        <div class="quicklink">
+                            <h3>TRUY CẬP NHANH</h3>
+                            <ul>
+                                <li><a href="">Trang chủ</a></li>
+                                <li><a href="">Địa điểm</a></li>
+                                <li><a href="">Liên hệ</a></li>
+                                <li><a href="">Đặt vé máy bay</a></li>
+                                <li><a href="">Đặt phòng khách sạn</a></li>
+                            </ul>
+                        </div>
+                        <div class="mail_box">
+                            <h3>ĐĂNG KÍ NHẬN THÔNG TIN KHUYẾN MÃI</h3>
+                            <span>Ưu đãi mới nhất sẽ được gửi vào email của bạn</span>
+                            <div class="mailform">
+                                <input placeholder="example@gmail.com" type="text" name="" id="">
+                                <button>ĐĂNG KÍ</button>
+                            </div>
+                        </div>
+                        <div class="follow">
+                            <h3>THEO DÕI CHÚNG TÔI TẠI</h3>
+                            <div class="link">
+                                <div class="rounded_ic">
+                                    <a href="https://facebook.com"><i class="fa-brands fa-facebook-f"></i></a>
+                                </div>
+                                <div class="rounded_ic">
+                                    <a href="https://twitter.com"><i class="fa-brands fa-twitter"></i></a>
+                                </div>
+                                <div class="rounded_ic">
+                                    <a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                                </div>
+                                <div class="rounded_ic">
+                                    <a href="https://youtube.com"><i class="fa-brands fa-youtube"></i></a>
+                                </div>
+                                <div class="rounded_ic">
+                                    <a href="https://google.com"><i class="fa-brands fa-google-plus-g"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr align="center" width="100%" size="1px">
+                    <div class="bot_content">
+                        <div class="cpright">
+                            <p>Copyright &copy 2022 All Rights Reserved By FukZink</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="home.js"></script>
+</body>
+</html>
